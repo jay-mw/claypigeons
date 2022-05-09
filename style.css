@@ -1,0 +1,268 @@
+
+
+
+body{
+  margin-left: 0;
+  margin-right: 0;
+  background-color:#fffafa;
+}
+
+main{color:#544B44;  margin: 0px auto; padding:0 25px; max-width: 720px; font-family: Georgia, serif; font-size:100%;}
+
+p{line-height: 1.75; }
+
+p a{color: #B77729;}
+
+header img{ display:block; margin: auto; width: 100%; max-width:720px;}
+
+h1{
+  font-family: 'Courier New', monospace;
+  font-weight:normal;
+  color:#A2A568;
+  font-size: 2.5em;
+}
+
+header h1{
+  padding-top:25px;
+  padding-left: 50px;
+
+}
+
+h2{ font-weight:normal; font-size:2em; font-family:'Courier New', monospace;}
+
+/*special header image*/
+.overlay{
+  display:block;
+  margin:auto;
+  background-size:cover;
+  width:100%;
+  max-width:720px;
+  height:100%;
+  height:360px;
+  background-color:#A2A568;
+  background-blend-mode: screen;
+  mix-blend-mode: multiply;
+
+}
+
+
+
+/* projects portfolio */
+
+
+
+
+
+/* in-text images with the figure shortcode */
+
+
+
+time{
+  font-size:1.1em;
+  font-family:monospace;
+}
+
+figure{
+  text-align: center;
+}
+
+blockquote{
+  
+  color:#333;
+  font-family: monospace;
+  font-size:1em;
+  margin:0;
+  line-height: 0;
+}
+
+@media only screen and (min-width:720px){
+li figure{overflow:auto;}
+li figure img{float:left; width:40%;}
+li figure figcaption{float:right; width:50%;margin-left:5px;}
+
+blockquote{
+border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color:#B77729;
+  padding-left:14pt;
+  margin:2px;
+	
+}
+
+}
+
+nav{
+  max-width:720px;
+  margin:0px 25px;
+
+  font-family: 'Courier New', monospace;
+  
+  padding-bottom:32px;
+
+}
+
+nav a{display: inline-block;
+  color:#B77729;
+  margin-right: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover{text-decoration: underline;}
+
+nav a:first-child{
+ font-weight:bold;
+ display:block;
+}
+
+@media only screen and (min-width:720px){
+  nav{margin:0px auto;}
+}
+
+article{
+  counter-reset: footnotes;
+}
+
+a[aria-describedby="footnotes-label"]{
+  counter-increment: footnotes;
+  text-decoration: underline;
+  color: #B77729;
+  outline:none;
+}
+
+a[aria-describedby="footnotes-label"]::after{
+  content: counter(footnotes);
+  vertical-align: super;
+  font-size: 0.75em;
+  margin-left: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a[aria-describedby="footnotes-label"]:focus{
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+footer{
+  font-family:monospace;
+  line-height: 1.25;
+  font-size:1em;
+}
+
+footer a{
+  color:#B77729;
+
+}
+
+footer :target{
+
+  background: yellow;
+
+}
+
+figure img{
+  width:100%;
+  max-width:512px;
+
+}
+
+
+li figure{
+
+  display:block;
+  text-align: left;
+}
+
+li figure img{
+
+  display:block;
+  width:100%;
+  max-width: 512px;
+
+}
+
+li figure figcaption{
+  display: block;
+
+}
+
+
+
+li figcaption a{
+
+  color:#A2A568;
+
+}
+
+li figcaption a:hover{
+  color: #B77729;
+}
+
+li h2{
+ font-size:1.5em;
+}
+
+li h2 a{
+  color:#B77729;
+  font-family:"Courier",monospace;
+  
+}
+li h2 a:hover{
+  outline: thin dotted;
+  outline-offset: 2px;
+  color:#B77729;
+}
+@media only screen and (min-width:720px){
+li figure{overflow:auto;}
+li figure img{float:left; width:40%;}
+li figure figcaption{float:right; width:50%;margin-left:5px;}
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul article{
+  padding:10px 0;
+}
+
+ul article h2{
+  margin:0;
+  font-family: 'Courier New', monospace;
+
+
+}
+
+article .summary{
+  font-style: italic;
+  position:relative;
+}
+
+article .summary::before{
+  content: "☞";
+  font-size: 1.5em;
+  position:absolute;
+  left:-.25ch;
+  top:-.5ch;
+
+
+}
+
+ul article a{
+  color:#B77729;
+}
+ul article a:hover{
+  outline: thin dotted;
+  outline-offset: 2px;
+
+}
+ul article p{
+  padding-left: 25px;
+}
+
+a[data-direction^="forwards"]{
+  float:right;
+}
+
